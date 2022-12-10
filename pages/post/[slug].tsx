@@ -2,7 +2,8 @@ import styles from '../../styles/Home.module.css';
 import { GetServerSideProps } from 'next';
 
 const fetchPost = async (slug: string | null | undefined) => {
-  const baseUrl = 'http://localhost:3000/api';
+  // const baseUrl = 'http://localhost:3000/api';
+  const baseUrl = 'https://e8krowlwd0.execute-api.eu-west-1.amazonaws.com/api';
   const res = await fetch(`${baseUrl}/post/${slug}`);
   const data = await res.json();
   return data;
