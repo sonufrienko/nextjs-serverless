@@ -1,2 +1,1 @@
-# nextjs-serverless
-NextJS app deployed as AWS Lambda function
+# Next.js app with SSR on AWS Lambda
